@@ -2,14 +2,16 @@ import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
-      <Link
-        to="/"
-        className="text-4xl text-center px-4 py-6 font-semibold"
-        aria-label="Go to home"
+    <div className="flex flex-col h-screen bg-white">
+      <a
+        href="https://jsheather.wixsite.com/scrum-zoo"
+        className="block hover:underline font-semibold text-xl p-2 bg-[#CBF2F5] text-black text-center"
       >
+        The Scrum Zoo
+      </a>
+      <div className="text-4xl text-center px-4 py-6 font-semibold">
         Why Red Pandas are totes fire 🔥
-      </Link>
+      </div>
       <aside className="flex-shrink-0 w-full bg-[#e1cee5]">
         <ul className="flex flex-wrap p-4 justify-center gap-x-6 text-lg">
           <li>
@@ -25,11 +27,6 @@ function App() {
           <li>
             <Link to="gallery/1" className="text-blue-900 hover:underline">
               Dank photos
-            </Link>
-          </li>
-          <li>
-            <Link to="anatomy" className="text-blue-900 hover:underline">
-              No cap data
             </Link>
           </li>
           <li>

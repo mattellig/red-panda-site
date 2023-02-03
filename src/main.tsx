@@ -44,7 +44,18 @@ const router = createBrowserRouter([
         path: "scientific",
         element: (
           <div>
-            <h1>Scientific information</h1>
+            <h1 className="text-2xl font-semibold mb-6">The tea</h1>
+            <ul className="space-y-2">
+              <li>Height: 50-64cm</li>
+              <li>Weight: 3-15kg</li>
+              <li>Lifespan: 15 Years Unique</li>
+              <li>
+                Characteristics: Red pandas are carnivores, but primarily
+                subsist on bamboo The red panda is the only non-primate mammal
+                that shows a preference for aspartame
+              </li>
+              <li>How it breathes: Respiration/lungs</li>
+            </ul>
           </div>
         ),
       },
@@ -54,20 +65,12 @@ const router = createBrowserRouter([
         loader: galleryLoader,
       },
       {
-        path: "anatomy",
-        element: (
-          <div>
-            <h1>Anatomy and biology</h1>
-          </div>
-        ),
-      },
-      {
         path: "facts",
         element: (
           <div>
             <h1 className="text-2xl font-semibold mb-6">Vibe check</h1>
             <img
-              src="https://murally.blob.core.windows.net/uploads/harnesschange8714/0-1675358637301.jpeg?se=2023-02-02T17%3A31%3A00Z&sp=r&sv=2018-03-28&sr=b&rscc=public%2C%20max-age%3D600&sig=%2Fi%2BieaW4lz2hsb4yxaGX22bxIbLyIufu8oASW9e2CZU%3D"
+              src="/scratching.jpeg"
               alt="Red panda scratching an ear"
               className="h-[280px] mx-auto mb-8"
             />
@@ -86,7 +89,20 @@ const router = createBrowserRouter([
         path: "diet",
         element: (
           <div>
-            <h1>Diet information</h1>
+            <h1 className="text-2xl font-semibold mb-6">Boujee eats</h1>
+            <ul className="space-y-2">
+              <li>
+                Red Panda's have a highly specialized Carnivore diet based
+                95-98% bamboo leaves and shoots. Out of all available species of
+                bamboo in the habitat only two are eaten (Wei & Zhang 2011) and
+                only during winter
+              </li>
+              <li>Occasionally eat eggs, lizards, fruit and birds</li>
+              <li>
+                Typically only pregnant females will eat live prey for extra
+                protein and nutrients
+              </li>
+            </ul>
           </div>
         ),
       },
